@@ -11,21 +11,19 @@
 }
 #banner-text{
     width: 50%;
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 #banner h1{
     color: rgb(87, 87, 87);
     font-family: Montserrat;
-    font-size: 60px;
+    font-size: 3.8rem;
     font-weight: 700;
-    line-height: 130%;
-    letter-spacing: -2%;
     text-align: left;
 }
 p{
     color: rgb(130, 130, 130);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 160%;
     letter-spacing: -2%;
@@ -34,7 +32,7 @@ p{
 #banner button , #contact button{
     color: rgb(255, 255, 255);
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0%;
@@ -68,7 +66,7 @@ p{
     margin: 32px 0px;
     color: rgb(112, 112, 112);
     font-family: Montserrat;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0%;
@@ -89,9 +87,9 @@ p{
     border-radius: 30px;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
-    width: 610px;
-    height: 562px;
-    padding: 30px 30px 30px 30px;
+    width: 38.125rem;
+    height: 35.125rem;
+    padding: 1.56rem 1.56rem 1.56rem 1.56rem;
 }
 #recipie .recipies img{
     border-radius: 20px;
@@ -103,7 +101,7 @@ p{
 #recipie .recipies >h3 , #followers h3{
     color: rgb(24, 25, 31);
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 1.7rem;
     font-weight: 800;
     line-height: 40px;
     letter-spacing: 0%;
@@ -121,7 +119,7 @@ p{
 }
 #followers h1{color: rgb(24, 25, 31);
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 64px;
     letter-spacing: 0%;
@@ -129,7 +127,7 @@ p{
 #motivation h3{
     color:rgb(91, 91, 91);
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: 800;
     line-height: 0px;
     letter-spacing: 0%;
@@ -138,7 +136,7 @@ p{
 #motivation p{
     color: rgb(255, 255, 255);
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -150,4 +148,77 @@ p{
     text-align: center;
     width: 100%;
     background-color: black;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    #banner , .recipies , #followers{
+        flex-direction: column;
+        font-size: 60%;
+        text-align: left;
+        gap: 24px;
+    }
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contact-text{
+        padding-left: 80px;
+    }
+    #contact-text button {
+        margin-bottom: 20px;
+    }
+    #recipie >h3, #recipie >p {
+        text-align: center;
+    }
+    #recipie .recipies div{
+        padding-right: 0px;
+        font-size: 70%;
+    }
+    #recipie .recipies div p , #recipe .recipies h3{
+        text-align: left;
+    }
+    #motivation{
+        width: 140%;
+    }
+    
+}
+
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+    #banner , .recipies , #followers{
+        flex-direction: column;
+        font-size: 75%;
+        gap: 24px;
+    }
+    
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contact-text{
+        padding-left: 80px;
+    }
+    #contact-text button {
+        margin-bottom: 20px;
+    }
+    #recipie >h3, #recipie >p , #recipie .recipies {
+        text-align: center;
+    }
+    #recipie .recipies div{
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 70%;
+    }
+    .recipies div p{
+        padding-left: 15px;
+    }
+    #recipie .recipies div p , #recipe .recipies div h3 , #banner{
+        text-align: left;
+    }
+    #motivation{
+        width: 110%;
+    }
 }
